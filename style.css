@@ -1,0 +1,109 @@
+* {
+    margin: 0; 
+    padding: 0; /* Reseta os estilos de margem e preenchimento para todos os elementos */
+    box-sizing: border-box;/* Define o modelo de caixa para incluir bordas e preenchimento no tamanho total do elemento */
+}
+
+body {
+    min-height: 100vh; /* Define a altura mínima do corpo para ocupar toda a altura da janela de visualização */
+    background-color: #f4f4f8; /* Define a cor de fundo do corpo */
+    font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes para o corpo */
+    padding: 40px 20px; /* Adiciona preenchimento ao redor do conteúdo do corpo */
+    color: #1a1a24; /* Define a cor do texto do corpo */
+}
+
+.container {
+    max-width: 440px; /* Define a largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    background-color: #04b80d; /* Define a cor de fundo do contêiner */
+    border-radius: 16px; /* Define o raio da borda do contêiner */
+    padding: 24px; /* Adiciona preenchimento interno ao contêiner */
+}
+
+h1 {
+    font-size: 22px; /* Define o tamanho da fonte do título */
+    margin-bottom: 24px; /* Adiciona margem inferior ao título */
+    color: #00000c;
+    text-align: center;
+}
+
+.campo {
+    flex: 1;
+    min-width: 0;
+    margin-bottom: 16px; /* Define espaço entre os campos */
+}
+
+.campo label {
+    display: black;
+    font-size: 15px; /* Tamanho da fonte fora dos campos */
+    font-weight: bold;
+    color: #000005; /* Cor da fonte de fora dos campos */
+    margin-bottom: 6px; 
+}
+
+.campo input,
+.campo select {
+    width: 100px; /*Tamanho horizontalmente dos campos de preenchimento */
+    padding: 12px; /* Tamanho verticalmente dos campos de preenchimento */
+    border: 1px solid #d5d5de; /* Cor e tamanho da borda de dentro dos campos de preenchimento */
+    border-radius: 8px; /* arredonda as bordas dos campos de preenchimento */
+    font-size: 15px; /* Tamanho da fonte dos campos de preenchimento */
+    background-color: #ffffff; /* Cor de fundo dos campso de preenchimento */
+}
+
+.moedas {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+#inverter { /*Botao de conversão da moeda */
+    margin-bottom: 16px;
+    padding: 12px;
+    border: 1px solid #04b80d;
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.principal {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #7f77dd;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.principal:desabled {
+    background-color: #b5b1ea;
+    cursor: wait;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    min-height: 30px;
+    word-break: break-word;
+}
+
+.resultado.erro {
+    font-size: 15px;
+    font-weight: normal;
+    color: #d94c4c;
+}
+
+.atualizacao {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #000008;
+    text-align: center;
+}

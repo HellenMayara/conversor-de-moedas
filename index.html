@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>Conversor de Moedas</h1>
+
+        <div class="campo">
+            <label for="valor">Valor</label>
+            <input type="text" id="valor" value="1,00" inputemode="decimal" autocomplete="off">
+        </div>
+
+        <div class="moedas">
+            <div class="campo">
+                <label for="de">De</label>
+                <select id="de"></select>
+            </div>
+
+            <button id="inverter" title="Inverter moedas">⇄</button>
+
+            <div class="campo">
+                <label for="para">Para</label>
+                <select id="para"></select>
+            </div>
+        </div>
+
+        <button id="converter" class="principal">Converter</button>
+
+        <div class="resultado" id="resultado"></div>
+
+        <p class="atualizacao" id="atualizacao"></p>
+
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
